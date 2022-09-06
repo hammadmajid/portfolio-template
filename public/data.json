@@ -1,0 +1,19 @@
+{
+    "name": "John Doe",
+    "pronoun": "(He/him)",
+    "jobTitle": "Event Planner",
+    "about" : {
+        "title" : "More Than Just Events",
+        "info": "I make memories, not just events. I am experienced in planning, designing, and launching huge celebrations. I've won awards for my work, including Tresswood's Excellence in Event Execution."
+    },
+    "education": {
+        "year": "2020",
+        "title": "Bachelor of Science in Management",
+        "info": "Tresswood University Excellence in Event Execution"
+    },
+    "work": {
+        "year": "2022",
+        "title": "Event Coordinator",
+        "info": "Party Fiesta Co."
+    }
+}
