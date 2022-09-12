@@ -29,3 +29,17 @@ function displayData(data) {
   // job info
   document.getElementById("job-info").innerText = data["work"]["info"];
 }
+
+// change layout on large devices
+
+let minWidth = "min-width: 786px";
+
+let bodyEle = document.getElementsByTagName("body")[0];
+let divEle = document.getElementById('layout_size-1--js');
+let divEle2 = document.getElementById('layout_size-2--js');
+
+if (window.matchMedia("(min-width: 768px)").matches) {
+  bodyEle.classList.replace('flex-column', 'flex-row');
+  divEle.classList.toggle('w-50');
+  divEle2.classList.toggle('w-50');
+}
