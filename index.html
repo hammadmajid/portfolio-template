@@ -16,6 +16,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
+    <style>
+      .custom--style {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+      }
+      #job-year, #edu-year {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      #job-title, #edu-title {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      #job-info, #edu-info {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    </style>
   </head>
   <body class="bg-black text-white d-flex flex-column">
     <div
@@ -49,20 +65,24 @@
       class="bg-info text-black vh-100 rounded-top p-4 d-flex flex-column gap-2 align-items-center justify-content-center"
       id="layout_size-2--js"
     >
-      <h3 class="w-100">About Me</h3>
+      <h3 class="w-100 fw-normal">About Me</h3>
       <h2 id="about-title" class="w-100"></h2>
       <p id="about-me" class="w-100"></p>
       <div class="w-100">
-        <h3>Education</h3>
-        <h3 id="edu-year"></h3>
-        <h3 id="edu-title"></h3>
-        <p id="edu-info"></p>
+        <h3 class="fw-normal text-uppercase border-top border-dark pt-4">Education</h3>
+        <div class="custom--style">
+          <h3 id="edu-year" class="fw-normal"></h3>
+          <h3 id="edu-title" class="fw-normal"></h3>
+          <p id="edu-info"></p>
+        </div>
       </div>
       <div class="w-100">
-        <h3>Experience</h3>
-        <h3 id="job-year"></h3>
-        <h3 id="job-title"></h3>
-        <p id="job-info"></p>
+        <h3 class="fw-normal text-uppercase border-top border-dark pt-4">Experience</h3>
+        <div class="custom--style">
+          <h3 id="job-year" class="fw-normal"></h3>
+          <h3 id="job-title" class="fw-normal"></h3>
+          <p id="job-info"></p>
+        </div>
       </div>
       <button class="btn btn-dark" id="listen_btn--js">
         <i class="bi bi-envelope" role="link"></i> <i>Contact Me</i>
