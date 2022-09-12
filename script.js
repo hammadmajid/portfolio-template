@@ -43,3 +43,10 @@ if (window.matchMedia("(min-width: 768px)").matches) {
   divEle.classList.toggle('w-50');
   divEle2.classList.toggle('w-50');
 }
+
+let btn = document.getElementById('listen_btn--js');
+btn.addEventListener('click', () => {
+  let URL = window.location.href;
+  URL += "/contact.html";
+  window.location.href = URL;
+})
