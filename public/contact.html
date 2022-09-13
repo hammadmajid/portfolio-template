@@ -17,48 +17,77 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
   </head>
-  <body class="bg-black text-white">
-    <form action="">
-      <div>
-        <div>
-          <label for="first name"></label
-          ><input
-            type="text"
-            name="first name"
-            required
-            placeholder="First name"
-          />
-        </div>
-        <div>
-          <label for="last name"></label
-          ><input
-            type="text"
-            name="last name"
-            required
-            placeholder="Last name"
-          />
-        </div>
+  <body
+    class="bg-black bg-gradient text-white d-flex flex-column gap-3 align-items-center justify-content-center vh-100 vw-100"
+  >
+    <h1 class="">Contact Me</h1>
+    <form
+      action=""
+      class="d-flex align-items-center justify-content-center gap-3 flex-column w-75"
+    >
+      <div class="input-group">
+        <span class="input-group-text"
+          ><i class="bi bi-person-lines-fill"></i
+        ></span>
+        <input
+          type="text"
+          name="first name"
+          required
+          placeholder="First name"
+          class="form-control"
+        />
+        <input
+          type="text"
+          name="last name"
+          required
+          placeholder="Last name"
+          class="form-control"
+        />
       </div>
-      <div>
-        <label for="email"></label
-        ><input type="email" name="email" required placeholder="E-mail" />
+      <div class="w-100 input-group">
+        <input
+          type="text"
+          name="email"
+          required
+          placeholder="mail"
+          class="form-control"
+        />
+        <span class="input-group-text">@</span>
+        <input
+          type="text"
+          class="form-control"
+          required
+          placeholder="example.com"
+        />
       </div>
-      <div>
-        <label for="subject"></label
-        ><input type="text" name="subject" required placeholder="Subject" />
+      <div class="w-100 input-group">
+        <input
+          type="text"
+          name="subject"
+          required
+          placeholder="Subject"
+          class="form-control"
+        />
+        <span class="input-group-text"
+          ><i class="bi bi-blockquote-right"></i
+        ></span>
       </div>
-      <div>
-        <label for="message">
-          <textarea
-            name="message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-        </label>
+      <div class="w-100">
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Message"
+          class="form-control w-100"
+          required
+        ></textarea>
       </div>
-      <label for="submit"><input type="submit" value="Submit" /></label>
+      <label for="submit" class="w-100  d-flex justify-content-center align-items-center"
+        ><input type="submit" value="Submit" class="btn btn-info w-25" /><i
+          class="bi bi-send"
+        ></i
+      ></label>
     </form>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
